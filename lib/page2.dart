@@ -72,7 +72,7 @@ class page2 extends StatelessWidget {
                               fit: BoxFit.cover)),
                     ),
                     onTap: () {
-                      Navigator.pop(context, names("Kiwi"));
+                      names("Kiwi");
                     },
                   ),
                   const SizedBox(
@@ -108,7 +108,7 @@ class page2 extends StatelessWidget {
                               fit: BoxFit.cover)),
                     ),
                     onTap: () {
-                      Navigator.pop(context, names("Oranges"));
+                      names("Oranges");
                     },
                   ),
                   const SizedBox(
@@ -128,7 +128,7 @@ class page2 extends StatelessWidget {
                       ),
                     ),
                     onTap: () {
-                      Navigator.pop(context, nothing());
+                      Navigator.pop(context, names);
                     },
                   )
                 ]),

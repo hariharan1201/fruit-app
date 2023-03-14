@@ -16,7 +16,7 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 48, 87, 49),
+        backgroundColor: const Color.fromARGB(255, 48, 87, 49),
         body: SafeArea(
             child: Center(
           child: Column(
@@ -43,7 +43,7 @@ class _homeState extends State<home> {
                   ),
                 ),
                 onTap: () async {
-                  String result = await Navigator.push(context,
+                  var result = await Navigator.push(context,
                       MaterialPageRoute(builder: (context) => page2()));
                   setState(() {
                     value = result;
